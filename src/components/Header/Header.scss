@@ -1,0 +1,19 @@
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__button {
+    &:hover {
+      border-bottom: 2px solid;
+    }
+  }
+}
