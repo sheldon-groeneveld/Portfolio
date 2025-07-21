@@ -1,17 +1,21 @@
 import "./Header.scss";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <header className="site-header">
-      <h1 className="site-header__title">Sheldon Groeneveld</h1>
-      <div className="site-header__container">
-        <button className="site-header__button">
+      <NavLink to={"/"}>
+        <h1 className="site-header__title">Sheldon Groeneveld</h1>{" "}
+      </NavLink>
+
+      <nav className="site-header__container">
+        <NavLink to={"/software"} className="site-header__button">
           <h2>SOFTWARE</h2>
-        </button>
-        <button className="site-header__button">
+        </NavLink>
+        <NavLink to={"/CAD"} className="site-header__button">
           <h2>CAD</h2>
-        </button>
-      </div>
+        </NavLink>
+      </nav>
     </header>
   );
 }
