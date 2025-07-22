@@ -5,10 +5,10 @@ function Header() {
   return (
     <header className="site-header">
       <NavLink to={"/"}>
-        <h1 className="site-header__title">Sheldon Groeneveld</h1>{" "}
+        <h1 className="site-header__title">Sheldon Groeneveld</h1>
       </NavLink>
 
-      <nav className="site-header__container">
+      <nav className="site-header__nav">
         <NavLink to={"/software"} className="site-header__button">
           <h2>SOFTWARE</h2>
         </NavLink>
